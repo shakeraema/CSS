@@ -1,0 +1,41 @@
+body{
+    background: #6592CF;
+}
+div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#outer{
+    width: 300px;
+    height: 150px;
+    background: #243D83;
+}
+#inner{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: #6592CF;
+}
+
+#inner::before,#inner::after{
+    content: '';
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+#inner::before{
+    width: 150px;
+    height: 150px;
+    background: #243D83;
+}
+
+#inner::after{
+    width: 50px;
+    height: 50px;
+    background: #EEB850;
+}
